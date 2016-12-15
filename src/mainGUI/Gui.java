@@ -2,6 +2,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
@@ -32,14 +33,11 @@ public class Gui implements Initializable{
     {
         Parent root;
         Stage stage;
+        Main grip = new Main();
 
         if(e.getSource() == btn_newgame)
         {
-            //root = FXMLLoader.load(getClass().getResource("gameGUI.game.fxml"));
-            //stage = (Stage) btn_newgame.getScene().getWindow();
-            //Scene scene = new Scene(root);
-            //stage.setScene(scene);
-            //stage.show();
+            grip.startGame("gameUI.fxml");
         }
         else if(e.getSource() == btn_continue)
         {
