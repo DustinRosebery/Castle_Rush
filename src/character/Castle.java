@@ -31,10 +31,7 @@ public class Castle implements Serializable{
     mat material;
     String name;
 
-    /**
-     * @param name Player input castle name
-     * New Castle Creation
-     */
+
     Castle()
     {
         name = "DEFAULT";
@@ -42,6 +39,11 @@ public class Castle implements Serializable{
         base_hp = 1;
         hp = 1;
     }
+
+    /**
+     * @param name Player input castle name
+     * New Castle Creation
+     */
     Castle(String name)
     {
         this.name = name;
