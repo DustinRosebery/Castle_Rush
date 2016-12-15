@@ -1,3 +1,5 @@
+package character;
+
 import java.io.Serializable;
 
 

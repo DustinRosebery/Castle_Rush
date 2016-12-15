@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane> fx:id="ancr_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui">
+<AnchorPane fx:id="ancr_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainGUI.GameUI">
    <children>
-      <Canvas fx:id="cnvs_bg" height="350.0" width="650.0" />
+      <Canvas fx:id="cnvs_gamebg" height="350.0" width="650.0" />
       <HBox fx:id="hbox" prefHeight="29.0" prefWidth="99.0">
          <children>
-            <Button fx:id="btn_exit" mnemonicParsing="false" text="Exit" textAlignment="CENTER" />
-            <Button fx:id="btn_pause" contentDisplay="TOP" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="56.0" text="Pause" />
+            <Button fx:id="btn_exit" mnemonicParsing="false" text="Exit" textAlignment="CENTER" onAction="#handleButtonEvent"/>
+            <Button fx:id="btn_pause" contentDisplay="TOP" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="56.0" text="Pause" onAction="#handleButtonEvent"/>
          </children>
       </HBox>
    </children>
