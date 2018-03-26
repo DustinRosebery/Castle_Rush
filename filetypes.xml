@@ -1,0 +1,9 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="US_Description" type="PLAIN_TEXT" />
+      <mapping pattern="Observation.txt" type="PLAIN_TEXT" />
+      <mapping pattern="Observation" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
